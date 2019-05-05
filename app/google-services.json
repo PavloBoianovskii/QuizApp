@@ -21,6 +21,10 @@
             "package_name": "com.example.votingapp",
             "certificate_hash": "2eb26f50f1789b773db04b149a2f8cb2b6b12f2a"
           }
+        },
+        {
+          "client_id": "886703943771-q4g7r2uqb5pk9707sfegdnoa4mgnto0m.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
       "api_key": [
