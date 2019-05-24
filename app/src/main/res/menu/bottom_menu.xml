@@ -12,7 +12,7 @@
     <item
         android:id="@+id/action_history"
         android:enabled="true"
-        android:title="History"
+        android:title="Ranking"
         android:icon="@drawable/ic_folder_black_24dp"
         app:showAsAction="ifRoom"/>
 

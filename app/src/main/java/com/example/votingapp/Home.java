@@ -26,7 +26,7 @@ public class Home extends AppCompatActivity {
                         selectedFragment = Categoryfragment.newInstance();
                         break;
                     case R.id.action_history:
-                        selectedFragment = HistoryFragment.newInstance();
+                        selectedFragment = RankingFragment.newInstance();
                         break;
                 }
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();

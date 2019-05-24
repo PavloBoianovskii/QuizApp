@@ -2,6 +2,7 @@ package com.example.votingapp;
 
 import android.content.ClipData;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -14,6 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 import android.content.ClipData.Item;
+
+import com.example.votingapp.Common.Common;
 import com.example.votingapp.Interface.ItemClickListener;
 import com.example.votingapp.Model.Category;
 import com.example.votingapp.ViewHolder.CategoryViewHolder;
@@ -83,7 +86,10 @@ public class Categoryfragment extends Fragment {
                 viewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void OnClick(View view, int position, boolean isLongClick) {
-                        Toast.makeText(getActivity(),String.format("%d|%s",adapter.getRef(position).getKey(),model.getName()),Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getActivity(),String.format("%d|%s",adapter.getRef(position).getKey(),model.getName()),Toast.LENGTH_SHORT).show();
+                        Intent startGame = new Intent(getActivity(),Start.class);
+                        Common.categoryId = adapter.getRef(position).getKey();
+                        startActivity(startGame);
                     }
                 });
 
